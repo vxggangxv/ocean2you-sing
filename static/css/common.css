@@ -1,0 +1,57 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+body {font-family: 'Nanum Square', 'NanumSquare', 'Nanum Gothic', 'Malgun Gothic', sans-serif; line-height:1.3; letter-spacing: -0.3px; color: #353535;}
+img {max-width: 100%;}
+a {color: inherit;}
+label {cursor: pointer;}
+
+
+/*공통스타일*/
+.contents {position: relative;}
+.container:before, .container:after {content: ""; display: table;}
+.container:after {clear: both;}
+.container {position: relative; width: 1200px; margin: 0 auto;}
+.f-bd {font-weight: 700;}
+.f-bdr {font-weight: 800;}
+.wrap {box-sizing: border-box;}
+
+/*body {padding-top: 100px;}*/
+/*해더영역*/
+.header {height: 100px;}
+.header .wrap,
+.header .wrap .area {height: 100%;}
+.header .wrap {position: fixed; top: 0; left: 0; width: 100%; height: 100px; background: #fff; z-index: 60;
+	-webkit-box-shadow: 0 0px 12px 3px rgba(0,0,0,.3);
+	box-shadow: 0 0px 12px 3px rgba(0,0,0,.3);
+}
+.header .wrap .logo {position: absolute; height: 100%; /*left: -275px;*/}
+.header .wrap .logo > a {display: block; background: #1e3a5a; height: 100%; padding: 30px 10px; box-sizing: border-box;}
+.header .wrap .logo img {}
+
+.wrapper .wrap .gnb {position: relative; float: right; top: 38px;}
+.wrapper .wrap .menu > li {position: relative; float: left;} 
+.wrapper .wrap .menu > li:before {content: ""; display: block; position: absolute; left: 0; top: 0; width: 1px; height: 60%; top: 18%; background: #fff;}
+.wrapper .wrap .menu > li:first-child:before {display: none;}
+.wrapper .wrap .menu > li > a {display: block;  /*padding: 0 35px;*/ font-size: 20px; color: #111; margin-right: 70px;}
+/*
+.wrapper .wrap .menu > li:first-child > a {padding-left: 0;}
+.wrapper .wrap .menu > li:last-child > a {padding-right: 0;}
+*/
+
+/*푸터영역*/
+.footer {position: relative; background: #303030; padding: 35px 0 50px;}
+.footer .wrap .logo, .footer .wrap address {float: left;}
+.footer .wrap .logo {width: 150px;}
+.footer .wrap address {width: 550px; color: #fff; font-size: 15px; line-height: 1.6; letter-spacing: 0;}
+.footer .wrap address small {text-transform: uppercase;}
+.footer .wrap [class*=flt-] {float: left; position: relative;}
+.footer .wrap .flt-2 {margin-left: 20px; padding-left: 40px; border-left: 1px solid #c9c9c9;}
+.footer .wrap .flt-2 .list-terms {}
+.footer .wrap .flt-2 .list-terms > li {float: left; color: #fff;}
+.footer .wrap .flt-2 .list-terms > li.mg {margin: 0 12px;}
+.footer .wrap .flt-2 .list-terms > li a {display: inline-block;}
+.footer .wrap .call {position: absolute; right: 0; color: #fff; font-size: 18px; width: 220px; text-align: right;}
+.footer .wrap .call .callNum {font-size: 28px; display: block; margin-bottom: 12px;}
