@@ -55,3 +55,9 @@ label {cursor: pointer;}
 .footer .wrap .flt-2 .list-terms > li a {display: inline-block;}
 .footer .wrap .call {position: absolute; right: 0; color: #fff; font-size: 18px; width: 220px; text-align: right;}
 .footer .wrap .call .callNum {font-size: 28px; display: block; margin-bottom: 12px;}
+
+/*Top버튼*/
+#goTop {position: fixed; right: 10px; bottom: 10px;}
+#goTop > img {width: 100%;}
+#goTop {visibility: hidden; opacity: 0; transition: all 0.5s;}
+#goTop.on, .rtBookingBn.on {opacity: 1; visibility: visible;}

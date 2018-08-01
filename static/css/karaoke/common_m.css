@@ -58,3 +58,9 @@ label {cursor: pointer;}
 .footer .wrap .call {position: absolute; right: 0; color: #fff; font-size: 18px; width: 220px; text-align: right;}
 .footer .wrap .call .callNum {font-size: 28px; display: block; margin-bottom: 12px;}
 */
+
+/*Top 버튼*/
+#goTop {position: fixed; width: 40px; height: 40px; right: 10px; bottom: 10px;}
+#goTop > img {width: 100%;}
+#goTop {visibility: hidden; opacity: 0; transition: all 0.5s;}
+#goTop.on, .rtBookingBn.on {opacity: 1; visibility: visible;}
